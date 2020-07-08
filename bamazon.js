@@ -55,17 +55,23 @@ function start() {
             message: "Please select the Product ID you would like to purchase..."
           },
           {
-            name: "productID",
+            name: "buyQty",
             type: "input",
-            message: "What is the Product ID you would like?"
+            message: "How many would you like to purchase?"
           }
         ])
         .then(function(answer) {
           // get the information of the chosen item
-          var chosenItem;
+          var chosenQty;
           for (var i = 0; i < results.length; i++) {
             if (results[i].item_name === answer.choice) {
-              chosenItem = results[i];
+              chosenQty = results[i];
+              if(chosenQty > results[i].stock_quantity){
+
+              } 
+            //   else (chosenQty < results[i].stock_quantity){
+            //       console.log()
+            //   }
             }
           }
   
