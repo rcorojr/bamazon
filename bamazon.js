@@ -79,3 +79,10 @@ function start() {
         });
     });
 };
+
+// remaining code: 
+
+//complete/fix stock check to initiate purchase determination with visible price.
+//write query that removes stock quantity in database.
+//Write no stock available wall
+//write purchase successful code
